@@ -1,0 +1,11 @@
+{
+  "name": "@deepmodeling/args",
+  "version": "0.0.1",
+  "description": "Arguments for DeepModeling",
+  "main": "args/args.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jinzhe Zeng",
+  "license": "LPGL-3.0"
+}
