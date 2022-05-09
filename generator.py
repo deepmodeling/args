@@ -9,7 +9,7 @@ from dpgen.generator.arginfo import run_mdata_arginfo
 from dpdispatcher import Resources, Task, Machine
 from dargs import ArgumentEncoder, Argument
 
-args_path = Path(__file__) / "args"
+args_path = Path(__file__).parent / "args"
 args_path.mkdir(exist_ok=True)
 
 args = {}
