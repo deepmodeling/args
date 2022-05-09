@@ -126,7 +126,7 @@ add_parameter(
 )
 
 # args.json
-with open(args_path / "args.json") as f:
+with open(args_path / "args.json", 'w') as f:
     json.dump(args, f)
 
 # list generated files
