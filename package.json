@@ -1,6 +1,6 @@
 {
   "name": "@deepmodeling/args",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Arguments for DeepModeling",
   "main": "args/args.json",
   "scripts": {
