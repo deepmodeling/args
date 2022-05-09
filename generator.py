@@ -41,7 +41,7 @@ def add_parameter(key : str, name: str, argument: Argument, version: str,
 
 # deepmd-kit
 add_parameter(
-    "deepmd-kit",
+    "deepmd-kit-2.0",
     "DeePMD-kit",
     (
         model_args(),
@@ -93,7 +93,7 @@ add_parameter(
 
 # dpgen
 add_parameter(
-    "dpgen",
+    "dpgen-machine",
     "DP-GEN Machine",
     run_mdata_arginfo(),
     dpgen.__version__,
