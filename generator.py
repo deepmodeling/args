@@ -15,7 +15,7 @@ args_path.mkdir(exist_ok=True)
 args = {}
 
 def jsdelivr_url(repo, version, file):
-    return "https://cdn.jsdelivr.net/gh/{}@{}/{}".format(repo, version, file)
+    return "https://fastly.jsdelivr.net/gh/{}@{}/{}".format(repo, version, file)
 
 
 def add_parameter(key : str, name: str, argument: Argument, version: str,
