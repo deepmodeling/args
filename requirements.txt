@@ -1,4 +1,4 @@
-deepmd-kit==2.1.2
+deepmd-kit==2.1.3
 tensorflow-cpu==2.9.1
 dpgen==0.10.5
 dpdispatcher==0.4.11
