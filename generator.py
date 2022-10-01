@@ -7,7 +7,7 @@ import dpdispatcher
 from deepmd.utils.argcheck import model_args, learning_rate_args, loss_args, training_args
 from dpgen.generator.arginfo import run_jdata_arginfo, run_mdata_arginfo
 from dpgen.simplify.arginfo import simplify_jdata_arginfo, simplify_mdata_arginfo
-from dpgen.init.arginfo import (
+from dpgen.data.arginfo import (
     init_bulk_jdata_arginfo,
     init_bulk_mdata_arginfo,
     init_surf_jdata_arginfo,
