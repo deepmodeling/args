@@ -5,7 +5,16 @@ import deepmd
 import dpgen
 import dpdispatcher
 from deepmd.utils.argcheck import model_args, learning_rate_args, loss_args, training_args
-from dpgen.generator.arginfo import run_mdata_arginfo
+from dpgen.generator.arginfo import run_jdata_arginfo, run_mdata_arginfo
+from dpgen.simplify.arginfo import simplify_jdata_arginfo, simplify_mdata_arginfo
+from dpgen.data.arginfo import (
+    init_bulk_jdata_arginfo,
+    init_bulk_mdata_arginfo,
+    init_surf_jdata_arginfo,
+    init_surf_mdata_arginfo,
+    init_reaction_jdata_arginfo,
+    init_reaction_mdata_arginfo,
+)
 from dpdispatcher import Resources, Task, Machine
 from dargs import ArgumentEncoder, Argument
 
@@ -93,9 +102,72 @@ add_parameter(
 
 # dpgen
 add_parameter(
+    "dpgen-run",
+    "DP-GEN Run",
+    run_jdata_arginfo(),
+    dpgen.__version__,
+    "deepmodeling/dpgen",
+)
+add_parameter(
     "dpgen-machine",
-    "DP-GEN Machine",
+    "DP-GEN Run Machine",
     run_mdata_arginfo(),
+    dpgen.__version__,
+    "deepmodeling/dpgen",
+)
+add_parameter(
+    "dpgen-simplify",
+    "DP-GEN Simplify",
+    simplify_jdata_arginfo(),
+    dpgen.__version__,
+    "deepmodeling/dpgen",
+)
+add_parameter(
+    "dpgen-simplify-machine",
+    "DP-GEN Simplify Machine",
+    simplify_mdata_arginfo(),
+    dpgen.__version__,
+    "deepmodeling/dpgen",
+)
+add_parameter(
+    "dpgen-init-bulk",
+    "DP-GEN init_bulk",
+    init_bulk_jdata_arginfo(),
+    dpgen.__version__,
+    "deepmodeling/dpgen",
+)
+add_parameter(
+    "dpgen-init-bulk-machine",
+    "DP-GEN init_bulk Machine",
+    init_bulk_mdata_arginfo(),
+    dpgen.__version__,
+    "deepmodeling/dpgen",
+)
+add_parameter(
+    "dpgen-init-surf",
+    "DP-GEN init_surf",
+    init_surf_jdata_arginfo(),
+    dpgen.__version__,
+    "deepmodeling/dpgen",
+)
+add_parameter(
+    "dpgen-init-surf-machine",
+    "DP-GEN init_surf",
+    init_surf_mdata_arginfo(),
+    dpgen.__version__,
+    "deepmodeling/dpgen",
+)
+add_parameter(
+    "dpgen-init-reaction",
+    "DP-GEN init_reaction",
+    init_reaction_jdata_arginfo(),
+    dpgen.__version__,
+    "deepmodeling/dpgen",
+)
+add_parameter(
+    "dpgen-init-reaction-machine",
+    "DP-GEN init_reaction Machine",
+    init_reaction_mdata_arginfo(),
     dpgen.__version__,
     "deepmodeling/dpgen",
 )
