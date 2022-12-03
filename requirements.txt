@@ -1,5 +1,5 @@
 deepmd-kit==2.1.5
 tensorflow-cpu==2.10.0
-dpgen @ git+https://github.com/deepmodeling/dpgen@60d2e3738a2d8090a547018928072f2805e04fba
-dpdispatcher==0.4.18
+dpgen==0.11.0
+dpdispatcher==0.4.19
 dargs
