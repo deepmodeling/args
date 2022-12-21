@@ -1,5 +1,4 @@
-deepmd-kit==2.1.5
-tensorflow-cpu==2.10.0
+deepmd-kit[cpu]==2.2.0b0
 dpgen==0.11.0
 dpdispatcher==0.4.19
 dargs
