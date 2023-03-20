@@ -3,6 +3,7 @@ from pathlib import Path
 
 import deepmd
 import dpgen
+import dpgen2
 import dpdispatcher
 from deepmd.utils.argcheck import model_args, learning_rate_args, loss_args, training_args
 from dpgen.generator.arginfo import run_jdata_arginfo, run_mdata_arginfo
