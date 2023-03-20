@@ -3,6 +3,7 @@ from pathlib import Path
 
 import deepmd
 import dpgen
+import dpgen2
 import dpdispatcher
 from deepmd.utils.argcheck import model_args, learning_rate_args, loss_args, training_args
 from dpgen.generator.arginfo import run_jdata_arginfo, run_mdata_arginfo
@@ -16,6 +17,7 @@ from dpgen.data.arginfo import (
     init_reaction_mdata_arginfo,
 )
 from dpdispatcher import Resources, Task, Machine
+from dpgen2.entrypoint.args import submit_args
 from dargs import ArgumentEncoder, Argument
 
 args_path = Path(__file__).parent / "args"
@@ -195,6 +197,15 @@ add_parameter(
     Task.arginfo(),
     dpdispatcher.__version__,
     "deepmodeling/dpdispatcher",
+)
+
+# DPGEN2
+add_parameter(
+    "dpgen2-submit",
+    "DP-GEN2 Submit",
+    submit_args(),
+    dpgen2.__version__,
+    "deepmodeling/dpgen2",
 )
 
 # args.json
