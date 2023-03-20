@@ -204,7 +204,7 @@ add_parameter(
     "dpgen2-submit",
     "DP-GEN2 Submit",
     submit_args(),
-    dpgen2.__version,
+    dpgen2.__version__,
     "deepmodeling/dpgen2",
 )
 
