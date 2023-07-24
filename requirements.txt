@@ -1,5 +1,5 @@
 deepmd-kit[cpu]==2.2.2
 dpgen==0.11.1
-dpdispatcher==0.5.8
+dpdispatcher==0.5.9
 dargs
 dpgen2
