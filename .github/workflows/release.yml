@@ -7,6 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
@@ -21,7 +24,7 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
         if: github.event_name == 'release'
-      - run: npm publish
+      - run: npm publish --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: github.event_name == 'release'
