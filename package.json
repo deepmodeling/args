@@ -1,10 +1,14 @@
 {
   "name": "@deepmodeling/args",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Arguments for DeepModeling",
   "main": "args/args.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepmodeling/args.git"
   },
   "author": "Jinzhe Zeng",
   "license": "LPGL-3.0"
