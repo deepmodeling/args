@@ -5,7 +5,7 @@ import deepmd
 import dpgen
 import dpgen2
 import dpdispatcher
-from deepmd.utils.argcheck import model_args, learning_rate_args, loss_args, training_args
+from deepmd.utils.argcheck import gen_args as deepmd_arginfo
 from dpgen.generator.arginfo import run_jdata_arginfo, run_mdata_arginfo
 from dpgen.simplify.arginfo import simplify_jdata_arginfo, simplify_mdata_arginfo
 from dpgen.data.arginfo import (
@@ -54,12 +54,7 @@ def add_parameter(key : str, name: str, argument: Argument, version: str,
 add_parameter(
     "deepmd-kit-2.0",
     "DeePMD-kit",
-    (
-        model_args(),
-        learning_rate_args(),
-        loss_args(),
-        training_args(),
-    ),
+    deepmd_arginfo(),
     deepmd.__version__,
     "deepmodeling/deepmd-kit",
     [
