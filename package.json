@@ -1,6 +1,6 @@
 {
   "name": "@deepmodeling/args",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Arguments for DeepModeling",
   "main": "args/args.json",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deepmodeling/args.git"
+    "url": "https://github.com/deepmodeling/args.git"
   },
   "author": "Jinzhe Zeng",
   "license": "LPGL-3.0"
