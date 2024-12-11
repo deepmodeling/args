@@ -5,7 +5,10 @@ import deepmd
 import dpgen
 import dpgen2
 import dpdispatcher
-from deepmd.utils.argcheck import gen_args as deepmd_arginfo
+from deepmd.utils.argcheck import (
+    gen_args as deepmd_arginfo,
+    gen_args_multi_task as deepmd_multi_task_arginfo,
+)
 from dpgen.generator.arginfo import run_jdata_arginfo, run_mdata_arginfo
 from dpgen.simplify.arginfo import simplify_jdata_arginfo, simplify_mdata_arginfo
 from dpgen.data.arginfo import (
@@ -95,6 +98,13 @@ add_parameter(
             "file": "examples/fparam/train/input_aparam.json"
         }
     ],
+)
+add_parameter(
+    "deepmd-kit-multi-task",
+    "DeePMD-kit",
+    deepmd_multi_task_arginfo(),
+    deepmd.__version__,
+    "deepmodeling/deepmd-kit",
 )
 
 # dpgen
